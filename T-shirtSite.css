@@ -5,6 +5,7 @@
     margin: auto;
   }
 
+
   article {
     border: 3px solid #67AAD2;
     border-bottom: none;
@@ -15,8 +16,31 @@
     margin-top: 5%;
     margin-left: 2.5%;
     position:relative;
+    margin-bottom: 10px;
 
   }
+  @media screen
+  and (min-width: 700px ) and (max-width: 800px)
+   {
+     article {
+       width: 50% auto;
+     }
+  }
+  @media screen
+  and (min-width:450px ) and (max-width: 699px)
+   {
+     article {
+       width: 40% auto;
+     }
+  }
+  @media screen
+    and (max-width: 449px)
+   {
+     article {
+       width: 90%
+     }
+  }
+
     .topRbox1 {
       border: 3px solid #67AAD2;
       float: right;
@@ -27,9 +51,20 @@
       color: #67AAD2;
       text-align: center;
     }
+
+    @media screen
+    and (min-width:450px ) and (max-width: 699px)
+     {
+       .topRbox1 {
+         width: 30px;
+         height: 30px;
+         text-align: center;
+       }
+    }
     .fa-undo {
       margin-top: 7.5px;
     }
+
     .topRbox1:hover {
       background-color: #67AAD2;
       color: white;
@@ -147,40 +182,60 @@
         transform: translate3d(0px, 20px, 0px);
       }
   #user li {
-    margin-top: 10%;
-    margin-bottom: 15%;
     list-style: none;
     text-align: center;
-    margin-left: 10%;
+    margin: 10%;
    }
-   #blueshirt {
+
+
+   .blueshirt {
      background-image: url("http://i.imgur.com/f4MDU7O.png");
-     background-repeat: no-repeat;
-     background-size: auto 65%;
-     background-position: center 35px;
-     min-width: inherit;
+
    }
-   #pinkshirt {
+
+   .pinkshirt {
      background-image: url("http://i.imgur.com/g0RtIBk.png");
-     background-repeat: no-repeat;
-     background-size: auto 65%;
-     background-position: center 35px;
-     min-width: inherit;
+
    }
-   #yellowshirt {
+   .yellowshirt {
      background-image: url("http://i.imgur.com/VLwmePn.png");
-     background-repeat: no-repeat;
-     background-size: auto 65%;
-     background-position: center 35px;
-     min-width: inherit;
+
    }
-   #codedrops1 {
+   .codedrops1 {
      background-image: url("http://i.imgur.com/nJyRZ0i.png");
-     background-repeat: no-repeat;
-     background-size: auto 65%;
-     background-position: center 35px;
-     min-width: inherit;
+
    }
+
+   .codedrops2 {
+     background-image: url("http://i.imgur.com/MngWgdn.png");
+
+   }
+   .codedrops3 {
+       background-image: url("http://i.imgur.com/ywAFUVA.png");
+
+     }
+
+     .shirt {
+       background-repeat: no-repeat;
+       background-size: auto 65%;
+       background-position: center 15%;
+
+     }
+
+     @media screen
+     and (min-width:450px ) and (max-width: 699px)
+      {
+        article.shirt {
+          background-size:auto 50%;
+        }
+     }
+     @media screen
+       and (max-width: 449px)
+      {
+        article.shirt {
+          background-size:auto 70%;
+        }
+     }
 
 
    #nubbin {
@@ -209,4 +264,10 @@
     border-top-color: #67aad2;
     border-width: 14px;
     margin-left: -14px;
+   }
+
+  #left{
+    margin-left: 2.5%;
+    padding-top: 3%;
+    clear: both;
    }
